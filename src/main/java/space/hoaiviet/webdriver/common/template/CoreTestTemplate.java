@@ -12,13 +12,11 @@ import space.hoaiviet.webdriver.common.core.driverprovider.DriverProvider;
  */
 public abstract class CoreTestTemplate {
 
-    protected HVWebDriver driver;
+    private HVWebDriver driver;
 
     private void refreshDriver() {
         driver = DriverProvider.getActiveDriver();
     }
-
-    private static int runID;
 
     @BeforeTest
     public void beforeTest() {
@@ -46,42 +44,6 @@ public abstract class CoreTestTemplate {
     private void setTestProperty(String key, String value) {
         if (!"".equals(value)) Configuration.setTestValue(key, value);
     }
-
-//    @AfterMethod
-//    public void afterMethod(ITestResult result) {
-////        int testCaseID = (int) result.getAttribute("testCaseID");
-////        UpdateReport updateReport = new UpdateReport();
-////        updateReport.updateTestResult(runID, testCaseID, 1);
-//    }
-
-//    @AfterMethod
-//    @Attachment(value = "Failure image", type = "image/png")
-//    public byte[] takeScreenShotOnFailure(ITestResult testResult) throws IOException {
-//        File destFile;
-//        if (testResult.getStatus() == ITestResult.FAILURE
-//                || testResult.getStatus() == ITestResult.SKIP) {
-//            File scrFile = driver.getScreenshotAs(OutputType.FILE);
-//            Calendar calendar = Calendar.getInstance();
-//            SimpleDateFormat formatter = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
-//
-//            try {
-//                String reportDirectory = new File(System.getProperty("user.dir")).getAbsolutePath() + "/target/surefire-reports";
-//                destFile = new File(String.format("%s/failure_screenshots/%s_%s.png",
-//                        reportDirectory,
-//                        testResult.getName(),
-//                        formatter.format(calendar.getTime())));
-//
-//                FileUtils.copyFile(scrFile, destFile);
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//        }
-//    }
-
-//    @AfterMethod
-//    public byte[] takeScreenShotOnFailure(ITestResult testResult) throws IOException {
-//        return driver.getScreenshotAs(OutputType.BYTES);
-//    }
 
     private void setWindowsSize() {
         Dimension browserSize = Configuration.getBrowserSize();

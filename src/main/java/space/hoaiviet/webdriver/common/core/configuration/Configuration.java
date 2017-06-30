@@ -116,7 +116,7 @@ public class Configuration {
                         Integer.valueOf(size.split("x")[1]));
             }
         } else {
-            throw new WebDriverException("browser size: " + size + " is not a proper value");
+            throw new WebDriverException("browser size: '" + size + "' is not a proper value.");
         }
     }
 }
