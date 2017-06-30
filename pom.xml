@@ -1,81 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.seveneleven</groupId>
-    <artifactId>core-automation</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>vn.seveneleven</groupId>
+    <artifactId>store-regression-test</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
 
-    <parent>
-        <groupId>vn.seveneleven</groupId>
-        <artifactId>store-regression-test</artifactId>
-        <version>1.0.0</version>
-    </parent>
+    <name>SC Regression Test</name>
+    <url>https://msv-tech.vn</url>
 
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>6.11</version>
-        </dependency>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>3.4.0</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.16.10</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
-        <dependency>
-            <groupId>org.yaml</groupId>
-            <artifactId>snakeyaml</artifactId>
-            <version>1.17</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.4</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
-            <version>4.3.5</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.opencsv</groupId>
-            <artifactId>opencsv</artifactId>
-            <version>3.9</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.retailmenot</groupId>
-            <artifactId>testrailsdk</artifactId>
-            <version>1.3</version>
-        </dependency>
-        <dependency>
-            <groupId>vn.seveneleven</groupId>
-            <artifactId>testrail-connector</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>vn.seveneleven</groupId>
-            <artifactId>testrail-connector</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-    </dependencies>
+    <modules>
+        <module>testrail-connector</module>
+        <module>testrail-utils</module>
+        <module>store-operation-test</module>
+        <module>core-selenium-automation</module>
+    </modules>
 </project>
