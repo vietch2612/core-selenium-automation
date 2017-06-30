@@ -15,9 +15,11 @@
     </properties>
 
     <modules>
-        <module>testrail-connector</module>
-        <module>testrail-utils</module>
+        <module>core-automation</module>
         <module>store-operation-test</module>
-        <module>core-selenium-automation</module>
+        <module>testrail-integration/testrail-connector</module>
+        <module>testrail-integration/testrail-utils</module>
+
+
     </modules>
 </project>

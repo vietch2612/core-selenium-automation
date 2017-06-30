@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/core-automation/core-automation.iml" filepath="$PROJECT_DIR$/core-automation/core-automation.iml" />
       <module fileurl="file://$PROJECT_DIR$/core-automation.iml" filepath="$PROJECT_DIR$/core-automation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/store-operation-test/store-automation-test.iml" filepath="$PROJECT_DIR$/store-operation-test/store-automation-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/store-regression-test.iml" filepath="$PROJECT_DIR$/store-regression-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testrail-integration/testrail-connector/testrail-connector.iml" filepath="$PROJECT_DIR$/testrail-integration/testrail-connector/testrail-connector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testrail-integration/testrail-integration.iml" filepath="$PROJECT_DIR$/testrail-integration/testrail-integration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testrail-integration/testrail-utils/testrail-tools.iml" filepath="$PROJECT_DIR$/testrail-integration/testrail-utils/testrail-tools.iml" />
     </modules>
   </component>
 </project>

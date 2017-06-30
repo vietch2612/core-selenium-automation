@@ -7,10 +7,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="core-automation" />
+        <module name="store-automation-test" />
+        <module name="testrail-connector" />
+        <module name="testrail-tools" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="core-automation" target="1.5" />
+      <module name="store-automation-test" target="1.5" />
+      <module name="store-regression-test" target="1.5" />
+      <module name="testrail-connector" target="1.7" />
+      <module name="testrail-integration" target="1.7" />
+      <module name="testrail-tools" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
