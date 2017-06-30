@@ -12,16 +12,14 @@ public class UrlHelper {
     private static Environment env = Configuration.getEnvironment();
 
     public static String getHQEndpoint() {
-        return "http://dev-hq-frontend.seven-system.com";
+        return "";
     }
 
     public static String getGOTEndpoint() {
-        return "http://dev-got.seven-system.com";
+        return "";
     }
 
     public static String getSCEndpoint() {
-//        return "http://dev-sc.seven-system.com";
-//        return "https://staging-sc-1.seven-system.com";
-        return "https://staging-sc-1.sevensystem.vn";
+        return "";
     }
 }
