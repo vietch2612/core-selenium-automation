@@ -1,0 +1,6 @@
+[submodule "testrail-integration"]
+	path = testrail-integration
+	url = https://github.com/vietch2612/testrail-integration
+[submodule "store-operation-test"]
+	path = store-operation-test
+	url = https://bitbucket.org/minion-sss/store-operation-test
