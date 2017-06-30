@@ -7,14 +7,10 @@ import lombok.Getter;
  * Environment
  */
 public enum Environment {
-
-    UAT("uat-hq-frontend.seven-system.com", "uat"),
-    TEST_1("qa-sc-1.seven-system.com", "test1"),
-    TEST_2("qa-sc-2.seven-system.com", "test2"),
-    MAPPING_1("mapping-sc-1.seven-system.com", "mapping1"),
-    MAPPING_2("mapping-sc-2.seven-system.com", "mapping2"),
-    DEVELOPMENT_1("dev-sc.seven-system.com", "dev1"),
-    DEVELOPMENT_2("dev-sc-2.seven-system.com", "dev2");
+    UAT("", "uat"),
+    TEST_1("", "test1"),
+    MAPPING_1("", "mapping1"),
+    DEVELOPMENT_1("", "dev1");
 
     @Getter
     public final String scDomain;
